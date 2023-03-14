@@ -1,38 +1,38 @@
 ﻿[
   {
-    "Nome": "Aço",
+    "Nome": "Eletrocinese ",
     "Cor": "#aab"
   },
   {
-    "Nome": "Água",
+    "Nome": "Super-força",
     "Cor": "#39f"
   },
   {
-    "Nome": "Dragão",
+    "Nome": "Poderes ilimitados",
     "Cor": "#76e"
   },
   {
-    "Nome": "Elétrico",
+    "Nome": "Methamorphose",
     "Cor": "#fc3"
   },
   {
-    "Nome": "Fada",
+    "Nome": "Controle de areia",
     "Cor": "#e9e"
   },
   {
-    "Nome": "Fantasma",
+    "Nome": "Fumaça",
     "Cor": "#66b"
   },
   {
-    "Nome": "Fogo",
+    "Nome": "Resistente",
     "Cor": "#f42"
   },
   {
-    "Nome": "Gelo",
+    "Nome": "Fogo",
     "Cor": "#6cf"
   },
   {
-    "Nome": "Inseto",
+    "Nome": "Velocidade",
     "Cor": "#ab6"
   },
   {
@@ -40,35 +40,7 @@
     "Cor": "#b54"
   },
   {
-    "Nome": "Normal",
+    "Nome": "omnipotência",
     "Cor": "#aa9"
-  },
-  {
-    "Nome": "Pedra",
-    "Cor": "#ba6"
-  },
-  {
-    "Nome": "Planta",
-    "Cor": "#7c5"
-  },
-  {
-    "Nome": "Psíquico",
-    "Cor": "#f59"
-  },
-  {
-    "Nome": "Sombrio",
-    "Cor": "#754"
-  },
-  {
-    "Nome": "Terrestre",
-    "Cor": "#db5"
-  },
-  {
-    "Nome": "Venenoso",
-    "Cor": "#a59"
-  },
-  {
-    "Nome": "Voador",
-    "Cor": "#89f"
   }
 ]
