@@ -1,6 +1,6 @@
 namespace Aliens_Ben10.Models
 {
-    public class tipo
+    public class Tipo
     {
         //Atributos
         public string Nome {get; set;}

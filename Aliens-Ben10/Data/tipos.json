@@ -8,7 +8,7 @@
     "Cor": "#39f"
   },
   {
-    "Nome": "Poderes ilimitados",
+    "Nome": "Poderes-ilimitados",
     "Cor": "#76e"
   },
   {
@@ -16,7 +16,7 @@
     "Cor": "#fc3"
   },
   {
-    "Nome": "Controle de areia",
+    "Nome": "Controle-de-areia",
     "Cor": "#e9e"
   },
   {
@@ -40,7 +40,23 @@
     "Cor": "#b54"
   },
   {
-    "Nome": "omnipotência",
+    "Nome": "Omnipotência",
     "Cor": "#aa9"
+  },
+  {
+    "Nome": "Alteração-tamanho",
+    "Cor": "#b51"
+  },
+  {
+    "Nome": "Cristalocinese",
+    "Cor": "#c42"
+  },
+  {
+    "Nome": "Regeneração",
+    "Cor": "#dd1"
+  },
+  {
+    "Nome": "Pirocinese",
+    "Cor": "#dd1"
   }
 ]
