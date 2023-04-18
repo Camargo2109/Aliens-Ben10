@@ -1,12 +1,13 @@
 using System.Text.Json;
 using Aliens.Models;
+
 namespace Aliens.Services;
-public class AlienService : IAlienService
+public class AlienService : IAliensService
 {
     private readonly IHttpContextAccessor _session;
     private readonly string aliensFile = @"Data\aliens.json";
     private readonly string tiposFile = @"Data\tipos.json";
-    public AlienService(IHttpContextAccessor session)
+    public AliensService(IHttpContextAccessor session)
     {   
         _session = session;
         PopularSessao();
@@ -25,7 +26,7 @@ public class AlienService : IAlienService
         (_session.HttpContext.Session.GetString("Tipos"));
         return tipos;
     }
-    public Alien GetAlien(int Numero)
+    public Aliens GetAlien(int Numero)
     {
         var aliens = GetAliens();
         return aliens.Where(p => p.Numero == Numero).FirstOrDefault();
@@ -42,17 +43,17 @@ public class AlienService : IAlienService
 
     public DetailsDto GetDetailedAlien(int Numero)
      {
-        var Aliens = GetAliens();
+        var aliens = GetAliens();
         var aliens = new DetailsDto()
         {
-            Current = Aliens.Where(p => p.Numero == Numero)
+            Current = aliens.Where(p => p.Numero == Numero)
             .FirstOrDefault(),
-            Prior = Aliens.OrderByDescending(p => p.Numero)
+            Prior = aliens.OrderByDescending(p => p.Numero)
             .FirstOrDefault(p => p.Numero < Numero),
-            Next = Aliens.OrderBy(p => p.Numero)
+            Next = aliens.OrderBy(p => p.Numero)
             .FirstOrDefault(p => p.Numero > Numero),
         };
-        return Alien;
+        return aliens;
     }
     public Tipo GetTipo(string Nome)
     {
@@ -65,7 +66,7 @@ public class AlienService : IAlienService
         if (string.IsNullOrEmpty(_session.HttpContext.Session.GetString("Tipos")))
         {
             _session.HttpContext.Session
-            .SetString("Aliens", LerArquivo(alienFile));
+            .SetString("Aliens", LerArquivo(aliensFile));
             _session.HttpContext.Session
             .SetString("Tipos", LerArquivo(tiposFile));
         }
