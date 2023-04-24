@@ -1,21 +1,21 @@
 using System.Text.Json;
-using Aliens.Models;
+using Aliens_Ben10.Models;
 
 namespace Aliens.Services;
-public class AlienService : IAliensService
+public class AliensServices : IAliensBenServices
 {
     private readonly IHttpContextAccessor _session;
     private readonly string aliensFile = @"Data\aliens.json";
     private readonly string tiposFile = @"Data\tipos.json";
-    public AliensService(IHttpContextAccessor session)
+    public AliensServices(IHttpContextAccessor session)
     {   
         _session = session;
         PopularSessao();
     }
-    public List<Aliens> GetAliens()
+    public List<Aliens10> GetAliens()
     {
          PopularSessao();
-        var aliens = JsonSerializer.Deserialize<List<Aliens>>
+        var aliens = JsonSerializer.Deserialize<List<Aliens10>>
         (_session.HttpContext.Session.GetString("Aliens"));
         return aliens;
     }
@@ -26,7 +26,7 @@ public class AlienService : IAliensService
         (_session.HttpContext.Session.GetString("Tipos"));
         return tipos;
     }
-    public Aliens GetAlien(int Numero)
+    public Aliens10 GetAliens(int Numero)
     {
         var aliens = GetAliens();
         return aliens.Where(p => p.Numero == Numero).FirstOrDefault();

@@ -1,10 +1,10 @@
-using Aliens.Models;
+using Aliens_Ben10.Models;
 namespace Aliens.Services;
-public interface IAlienService
+public interface IAliensBenServices
 {
-    List<Aliens> GetAliens();
+    List<Aliens10> GetAliens();
     List<Tipo> GetTipos();
-    Aliens GetAliens(int Numero);
+    Aliens10 GetAliens(int Numero);
     AliensDto GetAliensDto();
     DetailsDto GetDetailedAliens(int Numero);
     Tipo GetTipo(string Nome);

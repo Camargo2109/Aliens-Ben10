@@ -7,7 +7,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSingleton<IAliensService, AliensService>();
+builder.Services.AddSingleton<IAliensBenServices, AliensServices>();
 
 var app = builder.Build();
 
