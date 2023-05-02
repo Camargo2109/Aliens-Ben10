@@ -4,6 +4,6 @@ namespace Aliens_Ben10.Models
     {
         //Atributos
         public string Nome {get; set;}
-        public string cor {get; set;}
+        public string Cor {get; set;}
     }
 }

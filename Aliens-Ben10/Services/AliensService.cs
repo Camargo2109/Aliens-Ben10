@@ -41,10 +41,10 @@ public class AliensServices : IAliensBenServices
         return aliens;
     }
 
-    public DetailsDto GetDetailedAlien(int Numero)
+    public DetailsDto GetDetailedAliens(int Numero)
      {
         var aliens = GetAliens();
-        var aliens = new DetailsDto()
+        var Aliens10 = new DetailsDto()
         {
             Current = aliens.Where(p => p.Numero == Numero)
             .FirstOrDefault(),
@@ -53,7 +53,7 @@ public class AliensServices : IAliensBenServices
             Next = aliens.OrderBy(p => p.Numero)
             .FirstOrDefault(p => p.Numero > Numero),
         };
-        return aliens;
+        return Aliens10;
     }
     public Tipo GetTipo(string Nome)
     {

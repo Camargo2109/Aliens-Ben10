@@ -37,7 +37,7 @@
                                 <div class="btn-group">
                                     @foreach (var tipo in aliens.Tipo)
                                     {
-                                        <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn my-2 text-white"
+                                        <a asp-action="Index" asp-route-tipo="@Tipo.ToLower()" class="btn my-2 text-white"
                                             style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
                                     }
                                 </div>
