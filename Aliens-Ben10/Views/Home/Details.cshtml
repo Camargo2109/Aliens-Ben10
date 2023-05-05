@@ -35,9 +35,9 @@
             <p class="mb-3"><strong>Categoria:</strong> @Model.Current.Especie</p>
             <p class="fw-bold">Tipo</p>
             <div class="btn-group">
-                @foreach (var tipo in Model.Current.Tipo)
+                @foreach (var tipo in Model.Current.Tipos)
                 {
-                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                    <a asp-action="Index" asp-route-tipo="@tipo.Nome.ToLower()" class="btn btn-lg text-white" style="background-color:@service.GetTipo(tipo.Nome).Cor">@tipo</a>
                 }
             </div>
         </div>

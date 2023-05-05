@@ -25,20 +25,20 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
             <!-- Card Alien - Inicio -->
-            @foreach (var aliens in Model.Aliens)
+            @foreach (var alien in Model.Aliens)
             {
                 <div class="col">
-                    <div class="card shadow-sm cursor-pointer @string.Join(' ', aliens.Tipo).ToLower()" onclick="GetInfo(@aliens.Numero)">
-                        <img src="@aliens.Imagem" class="card-img-top" width="100%" height="300" alt="@aliens.Nome" />
+                    <div class="card shadow-sm cursor-pointer @string.Join(' ', alien.Tipos).ToLower()" onclick="GetInfo(@alien.Numero)">
+                        <img src="@alien.Imagem" class="card-img-top" width="100%" height="300" alt="@alien.Nome" />
                         <div class="card-body">
-                            <p class="card-text mb-0">Nº @aliens.Numero.ToString("000")</p>
-                            <h3 class="card-title">@aliens.Nome</h3>
+                            <p class="card-text mb-0">Nº @alien.Numero.ToString("000")</p>
+                            <h3 class="card-title">@alien.Nome</h3>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    @foreach (var tipo in aliens.Tipo)
+                                    @foreach (var tipo in alien.Tipos)
                                     {
-                                        <a asp-action="Index" asp-route-tipo="@Tipo.ToLower()" class="btn my-2 text-white"
-                                            style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                                        <a asp-action="Index" asp-route-tipo="@tipo.Nome.ToLower()" class="btn my-2 text-white"
+                                            style="background-color:@service.GetTipo(alien.Nome).Cor">@tipo</a>
                                     }
                                 </div>
                             </div>

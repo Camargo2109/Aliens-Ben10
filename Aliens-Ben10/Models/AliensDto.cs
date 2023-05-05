@@ -1,7 +1,8 @@
-   
-    namespace Aliens_Ben10.Models;
-    public class AliensDto
+namespace Aliens_Ben10.Models
 {
-    public List<Tipo> Tipos { get; set; }
-    public List<Aliens10> Aliens { get; set; }
-}   
+    public class AliensDto
+    {
+        public List<Tipo> Tipos { get; set; }
+        public List<Aliens10> Aliens { get; set; }
+    }   
+}
