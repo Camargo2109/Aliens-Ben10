@@ -15,15 +15,13 @@ public class AliensServices : IAliensBenServices
     public List<Aliens10> GetAliens()
     {
          PopularSessao();
-        var aliens = JsonSerializer.Deserialize<List<Aliens10>>
-        (_session.HttpContext.Session.GetString("Aliens"));
+        var aliens = JsonSerializer.Deserialize<List<Aliens10>>(_session.HttpContext.Session.GetString("Aliens"));
         return aliens;
     }
     public List<Tipo> GetTipos()
     {
         PopularSessao();
-        var tipos = JsonSerializer.Deserialize<List<Tipo>>
-        (_session.HttpContext.Session.GetString("Tipos"));
+        var tipos = JsonSerializer.Deserialize<List<Tipo>>(_session.HttpContext.Session.GetString("Tipos"));
         return tipos;
     }
     public Aliens10 GetAliens(int Numero)
@@ -65,10 +63,8 @@ public class AliensServices : IAliensBenServices
     {
         if (string.IsNullOrEmpty(_session.HttpContext.Session.GetString("Tipos")))
         {
-            _session.HttpContext.Session
-            .SetString("Aliens", LerArquivo(aliensFile));
-            _session.HttpContext.Session
-            .SetString("Tipos", LerArquivo(tiposFile));
+            _session.HttpContext.Session.SetString("Aliens", LerArquivo(aliensFile));
+            _session.HttpContext.Session.SetString("Tipos", LerArquivo(tiposFile));
         }
     }
     private string LerArquivo(string fileName)

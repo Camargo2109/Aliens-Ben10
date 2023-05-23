@@ -4,7 +4,7 @@
     "Nome": "Alien X",
     "Descricao": "Ben reconhece o Alien X como o alienígena mais forte e mais poderoso do Omnitrix, porém, ele não pode arcar com o custo que vem se transformando neste alien.",
     "Especie": "Sapien Celestial",
-    "Tipo": [ "Poderes ilimitados" ] ,
+    "Tipos": [ "Poderes-ilimitados" ] ,
     "Imagem": "\\img\\aliens\\alien-x.jfif"
   },
   {
@@ -12,7 +12,7 @@
     "Nome": "FeedBack",
     "Descricao": "Feedback tem um olho verde no meio de sua cabeça. Ele tem duas antenas e uma cauda que se conecta em função de suas pontas, que lhe permite absorver energia e usá-la. Ele tem quatro dedos em cada mão com plugues na ponta de cada dedo. Feedback tem apenas dois dedos nos pés. O Omnitrix está localizado no seu peito.",
     "Especie": "Conductoide",
-    "Tipo": [ "Eletrocinese"],
+    "Tipos": [ "Eletrocinese"],
     "Imagem": "\\img\\aliens\\feedback.jpeg"
   },
   {
@@ -20,7 +20,7 @@
     "Nome": "Acelerado",
     "Descricao": "Acelerado é um alienígena semelhante a um felino com um esquema de cores preto. Suas mãos, pernas, e a parte de sua cabeça e o tórax são da cor azul. Ele tem espinhos em suas mãos e pernas. Ele também tem uma máscara preta semelhante a de Wolverine com barbatanas ao redor de seus olhos verdes. Ele tem um nariz em forma de triângulo e um projeto de raio em seu peito. ",
     "Especie": "Citrakayah",
-    "Tipo": [ "Super-força", "Velocidade" ],
+    "Tipos": [ "Super-força", "Velocidade" ],
     "Imagem": "\\img\\aliens\\acelerado.jpeg"
   },
   {
@@ -28,15 +28,15 @@
     "Nome": "Friagem",
     "Descricao": "Friagem é um alienígena humanoide, semelhante a uma mariposa, cujas quatro asas e antena se dobram em um manto com capuz (muito parecido com um poncho), dando-lhe a aparência de um fantasma. Ele tem um corpo preto com manchas ciano nos braços, ombros, pernas, na parte de trás das asas e na parte de trás do pescoço, que se assemelham a pedaços de gelo.",
     "Especie": "Necrofriggiano",
-    "Tipo": [ "Resistente" , "Velocidade", "Super-força"],
+    "Tipos": [ "Resistente" , "Velocidade", "Super-força"],
     "Imagem": "\\img\\aliens\\friagem.jpeg"
   },
   {
     "Numero": 5,
     "Nome": "Gigante",
-    "Descricao": "Gigante é um alienígena enorme, com cor predominante o branco. Em sua cabeça, possui uma única crista, com a parte da frente preta e a de trás vermelha. Em seus ombros tem uma espécie de lamina preta. Seus braços são vermelhos, e tem duas pulseiras pretas. Tem pés vermelhos com dois dedos, e um tipo de sandália preta no meio deles.",
-    "Especie": "To'kustar",
-    "Tipo": [ "Alteração-tamanho" ],
+    "Descricao": "Gigante é um alienígena enorme, com cor predominante o branco. Em sua cabeça, possui uma única crista, com a parte da frente preta e a de trás vermelha. Em seus ombros tem uma espécie de lamina preta. Seus braços são vermelhos, e tem duas pulseiras pretas. Tem pés vermelhos com dois dedos, e um Tipos de sandália preta no meio deles.",
+    "Especie": "To kustar",
+    "Tipos": [ "Alteração-tamanho" ],
     "Imagem": "\\img\\aliens\\gigante.jpeg"
   },
   {
@@ -44,7 +44,7 @@
     "Nome": "Diamante",
     "Descricao": "Tem a aparência de uma Petrosapien feminina, sem cristais em suas costas, e uma cabeça um pouco mais quadrada. Usa um traje semelhante ao do Diamante de Ben, mas com cores azuis. ",
     "Especie": "Petrosapien",
-    "Tipo": [ "Cristalocinese", "Regeneração" ],
+    "Tipos": [ "Cristalocinese", "Regeneração" ],
     "Imagem": "\\img\\aliens\\diamante.jpeg"
   },
   {
@@ -52,7 +52,7 @@
     "Nome": "Dino-Mighty",
     "Descricao": "Sendo a versão de Ben 23 do Enormossauro, Dino-Mighty é idêntico a ele, porém sua pele tem um tom mais azulado, a faixa em seu peito é azul assim como seus olhos e o símbolo do Relógio do Herói, que são um pouco mais claros. ",
     "Especie": "Vaxasauriano",
-    "Tipo": [ "Super-força", "Resistente"],
+    "Tipos": [ "Super-força", "Resistente"],
     "Imagem": "\\img\\aliens\\Dino-Mighty.jpeg"
   },
   {
@@ -60,7 +60,7 @@
     "Nome": "Chama",
     "Descricao": "Chama é uma forma de vida humanoide baseada em plasma. Seu corpo é constituído por um interior de magma brilhante coberta por um vermelho escuro. Seu corpo irradia grandes quantidades de calor. Seus pés têm apenas dois dedos e uma parte traseira pontuda. ",
     "Especie": "Pyronita",
-    "Tipo": [ "Pirocinese", "Fogo" ],
+    "Tipos": [ "Pirocinese", "Fogo" ],
     "Imagem": "\\img\\aliens\\chama.jpeg"
   }
 ]
